@@ -8,7 +8,14 @@ import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 public class SquareSum {
 
     public static int calculateSumSquareDiff(int n) {
+        return calculateSquareOfTheSum(n) - calculateSumOfTheSquares(n);
+    }
+
+    public static int calculateSquareOfTheSum(int n){
         throw new NotImplementedException();
     }
 
+    public static int calculateSumOfTheSquares(int n){
+        throw new NotImplementedException();
+    }
 }
