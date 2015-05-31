@@ -1,12 +1,28 @@
 package com.lab;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-
 /**
  * Created by ewna on 2015-05-31.
  */
 public class SquareSum {
 
+    /**
+     * Calculates the difference between the square of the sum and the sum of the squares for first n natural numbers.
+     * <p>
+     * The sum of the squares of the n natural numbers is,
+     * 1^2 + 2^2 + ... + n^2 = sum1
+     * <p>
+     * The square of the sum of the n natural numbers is,
+     * (1 + 2 + ... + n)^2 = sum2
+     * <p>
+     * Difference between the sum of the squares of n natural numbers and the square of the sum is sum2 - sum1.
+     * <p>
+     * Examples:
+     * calculateSumSquareDiff(4) -> 70
+     * calculateSumSquareDiff(10) -> 2640
+     *
+     * @param n - length of sequence
+     * @return difference of "square of the sum" and "sum of the squares"
+     */
     public static int calculateSumSquareDiff(int n) {
         return calculateSquareOfTheSum(n) - calculateSumOfTheSquares(n);
     }
