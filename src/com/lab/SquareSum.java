@@ -21,6 +21,10 @@ public class SquareSum {
     }
 
     public static int calculateSumOfTheSquares(int n){
-        throw new NotImplementedException();
+        int sumOfTheSquares = 0;
+        for (int i = 1; i <= n; ++i) {
+            sumOfTheSquares += (i * i);
+        }
+        return sumOfTheSquares;
     }
 }
