@@ -12,7 +12,12 @@ public class SquareSum {
     }
 
     public static int calculateSquareOfTheSum(int n){
-        throw new NotImplementedException();
+        int squareOfTheSum = 0;
+        for (int i = 1; i <= n; ++i) {
+            squareOfTheSum += i;
+        }
+        squareOfTheSum *= squareOfTheSum;
+        return squareOfTheSum;
     }
 
     public static int calculateSumOfTheSquares(int n){
