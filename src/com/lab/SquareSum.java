@@ -4,7 +4,6 @@ package com.lab;
  * Created by ewna on 2015-05-31.
  */
 public class SquareSum {
-
     /**
      * Calculates the difference between the square of the sum and the sum of the squares for first n natural numbers.
      * <p>
