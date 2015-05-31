@@ -1,5 +1,7 @@
 package com.lab;
 
+import com.sun.javaws.exceptions.InvalidArgumentException;
+
 /**
  * Created by ewna on 2015-05-31.
  */
@@ -23,6 +25,8 @@ public class SquareSum {
      * @return difference of "square of the sum" and "sum of the squares"
      */
     public static int calculateSumSquareDiff(int n) {
+        if(n < 0)
+            throw new IllegalArgumentException("n must be positive number");
         return calculateSquareOfTheSum(n) - calculateSumOfTheSquares(n);
     }
 
